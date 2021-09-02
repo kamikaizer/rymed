@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+      
+      <link rel="stylesheet" href="style.css">
+
+      
+      <title>Contactos</title>
+
+   </head>
+<style>
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+#list-tab{
+height:650px;
+overflow:auto;
+}
+.card {
+    height: 650px;
+}
+h1{
+    text-align: center;
+
+}
+body{
+    background-color: #f5f5f500;
+}
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 350px;
+}
+
+li {
+  position: relative;
+  display: inline-block;
+  line-height: 60px;
+}
+
+li a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+}
+
+li span {
+	display: inline-block;
+	width: 60px;
+  color: #f5f5f5;
+	transition: transform 0.3s;
+	transform-origin: top left;
+	transform-style: preserve-3d;
+}
+
+li:hover span,
+li:focus span {
+  transform: rotateX(90deg) 
+             translateY(-33px);
+}
+
+li span::before {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  color: #eaeaea;
+	content: "\f0c1";
+	transition: background 0.3s;
+	transform: rotateX(-90deg);
+	transform-origin: top left;
+}
+
+/* Back font color */
+li:hover span::before,
+li:focus span::before {
+  color: #eaeaea;
+}
+
+
+.icon {
+  font-family: FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+li span.github {
+  background: #79b7f1;
+}
+li span.github::before,
+li:hover span.github::before,
+li:focus span.github::before {
+  background: #79b7f1;
+  color: rgb(255, 255, 255);
+}
+
+
+li span.google {
+  background: #79b7f1;
+}
+li span.google::before,
+li:hover span.google::before,
+li:focus span.google::before {
+  background: #79b7f1;
+}
+
+</style>
+
+<body>
+<br>
+<div class="container-flex">
+<div class="container">
+  <div class="row">
+      <div class="col-3">
+        <br>
+
+          <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-01-list" data-toggle="list" href="#list-01" role="tab" aria-controls="01">Dr. Eduardo Villanueva</a>
+            <a class="list-group-item list-group-item-action" id="list-02-list" data-toggle="list" href="#list-02" role="tab" aria-controls="02">Dr. Nelson Obregon</a>
+            <a class="list-group-item list-group-item-action" id="list-03-list" data-toggle="list" href="#list-03" role="tab" aria-controls="03">Dr. Alvaro Sanchez</a>
+            <a class="list-group-item list-group-item-action" id="list-04-list" data-toggle="list" href="#list-04" role="tab" aria-controls="04">Dr. Armando Iñiguez</a>
+            <a class="list-group-item list-group-item-action" id="list-05-list" data-toggle="list" href="#list-05" role="tab" aria-controls="05">Dr. Pablo Contreras</a>
+            <a class="list-group-item list-group-item-action" id="list-06-list" data-toggle="list" href="#list-06" role="tab" aria-controls="06">Dr. Javier Villalon</a>
+            <a class="list-group-item list-group-item-action" id="list-07-list" data-toggle="list" href="#list-07" role="tab" aria-controls="07">Dr. Carlos Cerchiaro</a>
+            <a class="list-group-item list-group-item-action" id="list-08-list" data-toggle="list" href="#list-08" role="tab" aria-controls="08">Dr. Vicente Sanchez</a>
+            <a class="list-group-item list-group-item-action" id="list-09-list" data-toggle="list" href="#list-09" role="tab" aria-controls="09">Dr. Erwin Molina</a>
+            <a class="list-group-item list-group-item-action" id="list-10-list" data-toggle="list" href="#list-10" role="tab" aria-controls="10">Dr. Jose Luis Monardez</a>
+            <a class="list-group-item list-group-item-action" id="list-11-list" data-toggle="list" href="#list-11" role="tab" aria-controls="11">Dr. Jorge Hernandez</a>
+            <a class="list-group-item list-group-item-action" id="list-12-list" data-toggle="list" href="#list-12" role="tab" aria-controls="12">Dr. Sergio Reyes</a>
+            <a class="list-group-item list-group-item-action" id="list-13-list" data-toggle="list" href="#list-13" role="tab" aria-controls="13">Dr. Rodrigo Contreras</a>
+            <a class="list-group-item list-group-item-action" id="list-14-list" data-toggle="list" href="#list-14" role="tab" aria-controls="14">Dr. Esteban Torres</a>
+            <a class="list-group-item list-group-item-action" id="list-15-list" data-toggle="list" href="#list-15" role="tab" aria-controls="15">Dr. Lisandro Vergara</a>
+            <a class="list-group-item list-group-item-action" id="list-16-list" data-toggle="list" href="#list-16" role="tab" aria-controls="16">Dr. Jose Luis Piñeros</a>
+            <a class="list-group-item list-group-item-action" id="list-17-list" data-toggle="list" href="#list-17" role="tab" aria-controls="17">Dr. Alejandro Ramirez</a>
+            <a class="list-group-item list-group-item-action" id="list-18-list" data-toggle="list" href="#list-18" role="tab" aria-controls="18">Dr. Galilea</a>
+            <a class="list-group-item list-group-item-action" id="list-19-list" data-toggle="list" href="#list-19" role="tab" aria-controls="19">Dr. Erick Aliaga</a>
+            <a class="list-group-item list-group-item-action" id="list-20-list" data-toggle="list" href="#list-20" role="tab" aria-controls="20">Dr. Marcelo Fonseca</a>
+            <a class="list-group-item list-group-item-action" id="list-21-list" data-toggle="list" href="#list-21" role="tab" aria-controls="21">Dr. Rodrigo Vielma</a>
+            <a class="list-group-item list-group-item-action" id="list-22-list" data-toggle="list" href="#list-22" role="tab" aria-controls="22">Dr. Sergio Valenzuela</a>
+            <a class="list-group-item list-group-item-action" id="list-23-list" data-toggle="list" href="#list-23" role="tab" aria-controls="23">Dr. Gonzalo Gomez</a>
+            <a class="list-group-item list-group-item-action" id="list-24-list" data-toggle="list" href="#list-24" role="tab" aria-controls="24">Dr. Hector Valdes</a>
+            <a class="list-group-item list-group-item-action" id="list-25-list" data-toggle="list" href="#list-25" role="tab" aria-controls="25">Dr. Roberto Prado</a>
+            <a class="list-group-item list-group-item-action" id="list-26-list" data-toggle="list" href="#list-26" role="tab" aria-controls="26">Dr. Anotnio Previtera</a>
+            <a class="list-group-item list-group-item-action" id="list-27-list" data-toggle="list" href="#list-27" role="tab" aria-controls="27">Dr. Cesar Gonzalez</a>
+            <a class="list-group-item list-group-item-action" id="list-28-list" data-toggle="list" href="#list-28" role="tab" aria-controls="28">Dr. Claudio Vallejos</a>
+            <a class="list-group-item list-group-item-action" id="list-29-list" data-toggle="list" href="#list-29" role="tab" aria-controls="29">Dr. Renato Ramirez</a>
+
+
+
+          </div>
+        </div>
+        <div class="col-9">
+          <br>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-01" role="tabpanel" aria-labelledby="list-01-list">
+       
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <div class="card-body">
+
+                            <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; margin-top: 50px;" src="https://www.asofiduciarias.org.co/wp-content/uploads/2018/06/sin-foto.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+                          <p class="card-text">
+                            <h1>Dr. Eduardo Villanueva</h1>
+
+                            
+                            <div class="container">
+                                <!-- <ul>
+                                  <li>
+                                    <a href="#"></a>
+                                    <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                                  </li>
+                                  <li>
+                                    <a href="#"></a>
+                                    <span class="icon google"><i class="fa fa-instagram"></i></span>
+                                  </li>
+ 
+                                </ul> -->
+                              </div>
+                            </center>
+                        </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title"></h5>
+                          <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.8920050416596!2d-70.6196719842026!3d-33.42605980364831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf63bc22e455%3A0x85415de3a985003a!2sAntonio%20Bellet%20143%2C%20OF%20209%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1629757395844!5m2!1ses!2scl" width="100%" height="600px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+
+            
+
+            
+
+            <div class="tab-pane fade" id="list-02" role="tabpanel" aria-labelledby="list-02-list">
+                <div class="row">
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <div class="card-body">
+
+                            <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; margin-top: 50px;" src="https://www.asofiduciarias.org.co/wp-content/uploads/2018/06/sin-foto.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+                          <p class="card-text">
+                            <h1>Dr. Nelson Obregon</h1>
+
+                            
+                            <div class="container">
+                                <!-- <ul>
+                                  <li>
+                                    <a href="#"></a>
+                                    <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                                  </li>
+                                  <li>
+                                    <a href="#"></a>
+                                    <span class="icon google"><i class="fa fa-instagram"></i></span>
+                                  </li>
+ 
+                                </ul> -->
+                              </div>
+                            </center>
+                        </p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-sm-6">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.0116582742676!2d-72.59076808407204!3d-38.74049469540893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9614d3de7e19bb81%3A0x4c347149ecfc675e!2sAntonio%20Varas%20989%2C%20piso%2022%2C%20Temuco%2C%20Araucan%C3%ADa!5e0!3m2!1ses!2scl!4v1629838676295!5m2!1ses!2scl" width="100%" height="600px" style="border:0;" allowfullscreen="" loading="lazy"></iframe></iframe>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="list-03" role="tabpanel" aria-labelledby="list-03-list">
+                <div class="row">
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <div class="card-body">
+
+                            <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; margin-top: 50px;" src="https://www.asofiduciarias.org.co/wp-content/uploads/2018/06/sin-foto.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+                          <p class="card-text">
+                            <h1>Dr. Alvaro Sanchez</h1>
+
+                            
+                            <div class="container">
+                                <ul>
+                                  <li>
+                                    <a href="https://medik.cl/"></a>
+                                    <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                                  </li>
+                                  <!-- <li>
+                                    <a href="#"></a>
+                                    <span class="icon google"><i class="fa fa-instagram"></i></span>
+                                  </li> -->
+ 
+                                </ul>
+                              </div>
+                            </center>
+                        </p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-sm-6">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.1029227216745!2d-72.96324098400366!3d-41.328375250926165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961826ec539afe21%3A0x953cab00c2d6f2ec!2sVicente%20P%C3%A9rez%20Rosales%201881%2C%20Puerto%20Varas%2C%20Los%20Lagos!5e0!3m2!1ses!2scl!4v1629838787916!5m2!1ses!2scl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="list-04" role="tabpanel" aria-labelledby="list-04-list">
+                <div class="row">
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <div class="card-body">
+
+                            <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; margin-top: 50px;" src="https://www.asofiduciarias.org.co/wp-content/uploads/2018/06/sin-foto.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+                          <p class="card-text">
+                            <h1>Dr. Armando Iñiguez</h1>
+
+                            
+                            <div class="container">
+                                <ul>
+                                  <li>
+                                    <a href="https://drarmandoiniguez.cl/"></a>
+                                    <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                                  </li>
+                                  <li>
+                                    <a href="http://instagram.com/drarmandoiniguez"></a>
+                                    <span class="icon google"><i class="fa fa-instagram"></i></span>
+                                  </li>
+ 
+                                </ul>
+                              </div>
+                            </center>
+                        </p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-sm-6">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.660276444912!2d-70.63126038420253!3d-33.432100303958066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5858b3d01c9%3A0x5a649cc600da3db4!2sBellavista%20415%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1629838958744!5m2!1ses!2scl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+
+            <div class="tab-pane fade" id="list-05" role="tabpanel" aria-labelledby="list-05-list">
+                <div class="row">
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <div class="card-body">
+
+                            <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; margin-top: 50px;" src="https://www.wlk.cl/wp-content/uploads/brizy/266/assets/images/iW=324&iH=450&oX=0&oY=72&cW=324&cH=305/Dr-Pablo-Contreras-min.jpg" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+                          <p class="card-text">
+                            <h1>Dr. Pablo Contreras</h1>
+
+                            
+                            <div class="container">
+                                <ul>
+                                  <li>
+                                    <a href="https://www.wlk.cl/cirugia-plastica/"></a>
+                                    <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                                  </li>
+                                  <li>
+                                    <a href="http://instagram.com/clinica_wlk"></a>
+                                    <span class="icon google"><i class="fa fa-instagram"></i></span>
+                                  </li>
+ 
+                                </ul>
+                              </div>
+                            </center>
+                        </p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-sm-6">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.969285711559!2d-70.60676198420273!3d-33.42404510354502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf6e9a1c1385%3A0xed01f3770851f981!2sAv.%20Los%20Leones%20465%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1629839045750!5m2!1ses!2scl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            
+
+            <div class="tab-pane fade" id="list-06" role="tabpanel" aria-labelledby="list-06-list">
+                <div class="row">
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <div class="card-body">
+
+                            <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; margin-top: 50px;" src="https://www.asofiduciarias.org.co/wp-content/uploads/2018/06/sin-foto.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+                          <p class="card-text">
+                            <h1>Dr. Javier Villalon</h1>
+
+                            
+                            <div class="container">
+                                <ul>
+                                  <!-- <li>
+                                    <a href="$"></a>
+                                    <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                                  </li> -->
+                                  <li>
+                                    <a href="http://instagram.com/drjaviervillalon"></a>
+                                    <span class="icon google"><i class="fa fa-instagram"></i></span>
+                                  </li>
+ 
+                                </ul>
+                              </div>
+                            </center>
+                        </p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-sm-6">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.15985461246!2d-70.57486068420339!3d-33.39299350195294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662ced5131b90bd%3A0xe3d29988ff9e992a!2sAv.%20Manquehue%20Nte.%201410%2C%20Vitacura%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1629839173873!5m2!1ses!2scl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+
+            
+
+            <div class="tab-pane fade" id="list-07" role="tabpanel" aria-labelledby="list-07-list">
+                <div class="row">
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <div class="card-body">
+
+                            <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; width: 250px; margin-top: 50px;" src="http://cirugiaplasticasantiago.cl/wp-content/uploads/2019/07/WhatsApp-Image-2019-07-09-at-18.52.35-3.jpeg" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+                          <p class="card-text">
+                            <h1>Dr. Carlos Cerchiaro</h1>
+
+                            
+                            <div class="container">
+                                <ul>
+                                  <li>
+                                    <a href="http://cirugiaplasticasantiago.cl/"></a>
+                                    <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                                  </li>
+                                  <li>
+                                    <a href="http://instagram.com/cirugiaplasticadrcerchiaro"></a>
+                                    <span class="icon google"><i class="fa fa-instagram"></i></span>
+                                  </li>
+ 
+                                </ul>
+                              </div>
+                            </center>
+                        </p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="col-sm-6">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title"></h5>
+                            <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.260880732368!2d-70.60455808480158!3d-33.41644228078372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf41e0121947%3A0x6cef10176c9653bd!2sEncomenderos%20161%2C%20Las%20Condes%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1629840116468!5m2!1ses!2scl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+
+            <div class="tab-pane fade" id="list-08" role="tabpanel" aria-labelledby="list-08-list">
+              <div class="row">
+                  <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-body">
+
+                          <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; width: 250px; margin-top: 50px;" src="https://clinicaessenza.cl/wp-content/uploads/2017/06/Doctor-Vicente.jpg" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+                        <p class="card-text">
+                          <h1>Dr. Vicente Sanchez</h1>
+
+                          
+                          <div class="container">
+                              <ul>
+                                <li>
+                                  <a href="https://clinicaessenza.cl/"></a>
+                                  <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                                </li>
+                                <li>
+                                  <a href="http://instagram.com/clinica_essenza"></a>
+                                  <span class="icon google"><i class="fa fa-instagram"></i></span>
+                                </li>
+
+                              </ul>
+                            </div>
+                          </center>
+                      </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-sm-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title"></h5>
+                          <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6661.246040977351!2d-70.567349!3d-33.406998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cedc3cd255bd%3A0x67a8981dedfabb15!2sAv.%20Manquehue%20Nte.%20151%2C%20Piso%2012%2C%20Las%20Condes%2C%20Regi%C3%B3n%20Metropolitana%2C%20Chile!5e0!3m2!1ses-419!2sco!4v1630414388818!5m2!1ses-419!2sco" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+          </div>
+
+          <div class="tab-pane fade" id="list-09" role="tabpanel" aria-labelledby="list-09-list">
+            <div class="row">
+                <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+
+                        <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; width: 250px; margin-top: 50px;" src="https://medystetic.cl/wp-content/uploads/2016/06/DR_MOLINA-1.jpg" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+                      <p class="card-text">
+                        <h1>Dr. Erwin Molina</h1>
+
+                        
+                        <div class="container">
+                            <ul>
+                              <li>
+                                <a href="https://medystetic.cl/profile/dr-erwin-david-molina-yanez/"></a>
+                                <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                              </li>
+                              <li>
+                                <a href="http://instagram.com/clinica_medystetic"></a>
+                                <span class="icon google"><i class="fa fa-instagram"></i></span>
+                              </li>
+
+                            </ul>
+                          </div>
+                        </center>
+                    </p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-sm-6">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13203.818149700124!2d-70.73554!3d-34.17308!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9663434142ed557d%3A0x2c419bf4b8902604!2sAv.%20Capit%C3%A1n%20Ram%C3%B3n%20Freire%20572%2C%20Rancagua%2C%20O&#39;Higgins!5e0!3m2!1ses!2scl!4v1630415070531!5m2!1ses!2scl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="list-10" role="tabpanel" aria-labelledby="list-10-list">
+          <div class="row">
+              <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+
+                      <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; width: 250px; margin-top: 50px;" src="https://www.asofiduciarias.org.co/wp-content/uploads/2018/06/sin-foto.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+                    <p class="card-text">
+                      <h1>Dr. Jose Luis Monardez</h1>
+
+                      
+                      <div class="container">
+                          <ul>
+                            <li>
+                              <a href="https://www.clinicaceys.cl/"></a>
+                              <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                            </li>
+                            <li>
+                              <a href="http://instagram.com/clinica.ceys"></a>
+                              <span class="icon google"><i class="fa fa-instagram"></i></span>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </center>
+                  </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-sm-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title"></h5>
+                      <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.8919511196405!2d-70.57646318420338!3d-33.39998300231121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662ced7da54c5a3%3A0x658c71e0c7ce536!2sAv.%20Pdte.%20Kennedy%205741%2C%20of.4%2C%20piso%202%2C%20Vitacura%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1630414629684!5m2!1ses!2scl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+          </div>
+      </div>
+
+
+      <div class="tab-pane fade" id="list-11" role="tabpanel" aria-labelledby="list-11-list">
+        <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+
+                    <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; width: 250px; margin-top: 50px;" src="https://www.asofiduciarias.org.co/wp-content/uploads/2018/06/sin-foto.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+                  <p class="card-text">
+                    <h1>Dr. Jorge Hernandez</h1>
+
+                    
+                    <div class="container">
+                        <ul>
+                          <li>
+                            <a href="http://clinicadelafigura.cl/"></a>
+                            <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                          </li>
+                          <li>
+                            <a href="http://instagram.com/clinicadelafigurachile"></a>
+                            <span class="icon google"><i class="fa fa-instagram"></i></span>
+                          </li>
+
+                        </ul>
+                      </div>
+                    </center>
+                </p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-sm-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6659.805859806879!2d-70.614135!3d-33.425775!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf6442c65ad5%3A0x94577d0015df1939!2sAv.%20Providencia%201881%2C%20of%201302%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1630415360894!5m2!1ses-419!2scl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </p>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+
+    <div class="tab-pane fade" id="list-12" role="tabpanel" aria-labelledby="list-12-list">
+      <div class="row">
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+
+                  <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; width: 250px; margin-top: 50px;" src="https://clinicalircay.cl/wp-content/uploads/2020/04/Sergio-Enrique-Reyes-Jaramillo_Especialista-en-Cirugi%CC%81a-Pla%CC%81stica-y-Reponedora-Especialista-en-Cirugi%CC%81a-General.jpg" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+                <p class="card-text">
+                  <h1>Dr. Sergio Reyes</h1>
+
+                  
+                  <div class="container">
+                      <ul>
+                        <li>
+                          <a href="https://clinicalircay.cl/doctores/sergio-reyes-jaramillo/"></a>
+                          <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                        </li>
+                        <li>
+                          <a href="http://instagram.com/clinicalircaycl"></a>
+                          <span class="icon google"><i class="fa fa-instagram"></i></span>
+                        </li>
+
+                      </ul>
+                    </div>
+                  </center>
+              </p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title"></h5>
+                  <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3251.2506680206584!2d-71.66992468415519!3d-35.423820008857916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9665c42077111ccb%3A0x6170cd69a81879e7!2sCalle%202%20Pte.%201372%2C%20Talca%2C%20Maule!5e0!3m2!1ses!2scl!4v1630415648671!5m2!1ses!2scl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  </p>
+                </div>
+              </div>
+            </div>
+      </div>
+  </div>
+
+  <div class="tab-pane fade" id="list-13" role="tabpanel" aria-labelledby="list-13-list">
+    <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+
+                <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; width: 250px; margin-top: 50px;" src="https://www.asofiduciarias.org.co/wp-content/uploads/2018/06/sin-foto.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+              <p class="card-text">
+                <h1>Dr. Rodrigo Contreras</h1>
+
+                
+                <div class="container">
+                    <ul>
+                      <li>
+                        <a href="https://www.doctorcontreras.cl/"></a>
+                        <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                      </li>
+                      <li>
+                        <a href="http://instagram.com/doctorcontreras.cl"></a>
+                        <span class="icon google"><i class="fa fa-instagram"></i></span>
+                      </li>
+
+                    </ul>
+                  </div>
+                </center>
+            </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"></h5>
+                <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3251.2506680206584!2d-71.66992468415519!3d-35.423820008857916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9665c42077111ccb%3A0x6170cd69a81879e7!2sCalle%202%20Pte.%201372%2C%20Talca%2C%20Maule!5e0!3m2!1ses!2scl!4v1630415648671!5m2!1ses!2scl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </p>
+              </div>
+            </div>
+          </div>
+    </div>
+</div>
+
+<div class="tab-pane fade" id="list-14" role="tabpanel" aria-labelledby="list-14-list">
+  <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+
+              <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; width: 250px; margin-top: 50px;" src="https://www.drestebantorres.cl/wp-content/uploads/2021/01/drestebantorres-150x150.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+            <p class="card-text">
+              <h1>Dr. Esteban Torres</h1>
+
+              
+              <div class="container">
+                  <ul>
+                    <li>
+                      <a href="https://www.drestebantorres.cl/"></a>
+                      <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                    </li>
+                    <li>
+                      <a href="http://instagram.com/doctorestebantorres"></a>
+                      <span class="icon google"><i class="fa fa-instagram"></i></span>
+                    </li>
+
+                  </ul>
+                </div>
+              </center>
+          </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.0781897286847!2d-70.62061488420262!3d-33.42120580339922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf60f767ef99%3A0x47d24a79eb84fbec!2sAv.%20Sta.%20Mar%C3%ADa%201810%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1630416192084!5m2!1ses!2scl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </p>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+<div class="tab-pane fade" id="list-15" role="tabpanel" aria-labelledby="list-15-list">
+  <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+
+              <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; width: 250px; margin-top: 50px;" src="https://www.asofiduciarias.org.co/wp-content/uploads/2018/06/sin-foto.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+            <p class="card-text">
+              <h1>Dr. Lisandro Vergara</h1>
+
+              
+              <div class="container">
+                  <ul>
+                    <li>
+                      <a href="http://lisandrovergara.cl/"></a>
+                      <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                    </li>
+                    <li>
+                      <a href="http://instagram.com/doctorlisandrovergara"></a>
+                      <span class="icon google"><i class="fa fa-instagram"></i></span>
+                    </li>
+
+                  </ul>
+                </div>
+              </center>
+          </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.1836377534814!2d-70.60477818420287!3d-33.41845640325837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf6a39b982d3%3A0x386deb8a445f8a58!2sAv.%20Providencia%202608%2C%20Oficina%2022%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1630416364017!5m2!1ses!2scl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </p>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+
+<div class="tab-pane fade" id="list-16" role="tabpanel" aria-labelledby="list-16-list">
+  <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+
+              <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; width: 250px; margin-top: 50px;" src="https://drpiñeros.cl/wp-content/uploads/2019/12/stacks-image-1714859-200x200.jpg" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+            <p class="card-text">
+              <h1>Dr. Jose Luis Piñeros</h1>
+
+              
+              <div class="container">
+                  <ul>
+                    <li>
+                      <a href="https://xn--drpieros-g3a.cl/"></a>
+                      <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                    </li>
+                    <li>
+                      <a href="http://instagram.com/doctorpineros"></a>
+                      <span class="icon google"><i class="fa fa-instagram"></i></span>
+                    </li>
+
+                  </ul>
+                </div>
+              </center>
+          </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.7164463587433!2d-70.61913978420256!3d-33.4306362038831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf7cbeb3a65d%3A0xf9a06642fbe3b515!2sAntonio%20Varas%20303%2C%20Of.%20302%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1630419870011!5m2!1ses!2scl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </p>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+<div class="tab-pane fade" id="list-17" role="tabpanel" aria-labelledby="list-17-list">
+  <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+
+              <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; width: 250px; margin-top: 50px;" src="https://www.dralejandroramirez.cl/wp-content/uploads/2018/06/AR_perfil-300x300.jpg" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+            <p class="card-text">
+              <h1>Dr. Alejandro Ramirez</h1>
+
+              
+              <div class="container">
+                  <ul>
+                    <li>
+                      <a href="https://www.dralejandroramirez.cl/es/"></a>
+                      <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                    </li>
+                    <li>
+                      <a href="http://instagram.com/dr.alejandroramirez"></a>
+                      <span class="icon google"><i class="fa fa-instagram"></i></span>
+                    </li>
+
+                  </ul>
+                </div>
+              </center>
+          </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.9847369286963!2d-70.58571218420336!3d-33.39756240218711!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf2e797aaaab%3A0x437452f953155e33!2sAv%20Vitacura%205093%2C%20Oficina%20304%2C%20Vitacura%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1630420239097!5m2!1ses!2scl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </p>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+
+<div class="tab-pane fade" id="list-18" role="tabpanel" aria-labelledby="list-18-list">
+  <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+
+              <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; width: 250px; margin-top: 50px;" src="https://www.asofiduciarias.org.co/wp-content/uploads/2018/06/sin-foto.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+            <p class="card-text">
+              <h1>Dr. Galilea</h1>
+
+              
+              <div class="container">
+                  <ul>
+                    <li>
+                      <a href="https://www.carlosgalilea.cl/"></a>
+                      <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                    </li>
+                    <li>
+                      <a href="http://instagram.com/dr.carlosgalilea"></a>
+                      <span class="icon google"><i class="fa fa-instagram"></i></span>
+                    </li>
+
+                  </ul>
+                </div>
+              </center>
+          </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.9142070696716!2d-70.57860118420328!3d-33.3994024022816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cfeab7b8d497%3A0x93be2ef23af166c5!2sTorre%20Norte!5e0!3m2!1ses!2scl!4v1630420383779!5m2!1ses!2scl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </p>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+<div class="tab-pane fade" id="list-19" role="tabpanel" aria-labelledby="list-19-list">
+  <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+
+              <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; width: 250px; margin-top: 50px;" src="https://www.asofiduciarias.org.co/wp-content/uploads/2018/06/sin-foto.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+            <p class="card-text">
+              <h1>Dr. Erick Aliaga</h1>
+
+              
+              <div class="container">
+                  <ul>
+                    <li>
+                      <a href="https://beacons.page/drerickaliaga"></a>
+                      <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                    </li>
+                    <li>
+                      <a href="http://instagram.com/dr.erick_aliaga_santos"></a>
+                      <span class="icon google"><i class="fa fa-instagram"></i></span>
+                    </li>
+
+                  </ul>
+                </div>
+              </center>
+          </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.042917957758!2d-71.5445233842136!3d-32.94987627938311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689dd3bd5c70927%3A0x3916af88434dbd81!2sAv.%20Bosques%20de%20Montemar%2065%2C%20Of.%20604%2C%20Conc%C3%B3n%2C%20Valpara%C3%ADso!5e0!3m2!1ses!2scl!4v1630420692354!5m2!1ses!2scl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </p>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+<div class="tab-pane fade" id="list-20" role="tabpanel" aria-labelledby="list-20-list">
+  <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+
+              <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; width: 250px; margin-top: 50px;" src="https://www.asofiduciarias.org.co/wp-content/uploads/2018/06/sin-foto.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+            <p class="card-text">
+              <h1>Dr. Marcelo Fonseca</h1>
+
+              
+              <div class="container">
+                  <ul>
+                    <li>
+                      <a href="https://www.marcelofonseca.cl/"></a>
+                      <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                    </li>
+                    <li>
+                      <a href="http://instagram.com/dr.marcelofonseca"></a>
+                      <span class="icon google"><i class="fa fa-instagram"></i></span>
+                    </li>
+
+                  </ul>
+                </div>
+              </center>
+          </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.892740639924!2d-70.13044208446306!3d-20.263282653993684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915214895080c9e3%3A0x2e42fe28cd12067e!2sEdificio%20Terranova!5e0!3m2!1ses!2scl!4v1630420900906!5m2!1ses!2scl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </p>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+<div class="tab-pane fade" id="list-21" role="tabpanel" aria-labelledby="list-21-list">
+  <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+
+              <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; width: 250px; margin-top: 50px;" src="https://www.asofiduciarias.org.co/wp-content/uploads/2018/06/sin-foto.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+            <p class="card-text">
+              <h1>Dr. Rodrigo Vielma</h1>
+
+              
+              <div class="container">
+
+                  <ul>
+                    <li>
+                      <a href="https://www.rodrigovielma.cl/"></a>
+                      <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                    </li>
+                    <li>
+                      <a href="http://instagram.com/dr.rodrigovielma"></a>
+                      <span class="icon google"><i class="fa fa-instagram"></i></span>
+                    </li>
+
+                  </ul>
+                </div>
+              </center>
+          </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <!-- <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.892740639924!2d-70.13044208446306!3d-20.263282653993684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915214895080c9e3%3A0x2e42fe28cd12067e!2sEdificio%20Terranova!5e0!3m2!1ses!2scl!4v1630420900906!5m2!1ses!2scl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                <h1>Sucursales</h1>
+                <br><br>
+                <section class="av_textblock_section " itemscope="itemscope" itemtype="https://schema.org/CreativeWork"><div class="avia_textblock  " itemprop="text"><p><strong>Edificio Costanera</strong><br>
+                  Avenida Pedro Lagos 1090,&nbsp;oficina 403, piso 4<br>
+                  <!-- <strong>Evaluación y presupuestos: </strong>+569 4241 1106<br> -->
+                  <strong>Mail:</strong> cpezo@rodrigovielma</p>
+                  <p><strong>Clínica Iquique</strong><br>
+                  Lib. Bernardo O’Higgins 103<br>
+                  <!-- <strong>Whatsapp:</strong> +569 5902 2507<br> -->
+                  <strong>Mail</strong>: iquique@rodrigovielma.cl</p>
+                  </div></section>
+                  <p><strong>Dentimed</strong><br>
+                    Calle Cobija 2244, Calama<br>
+                    <!-- <strong>Fono:</strong> (55)231 4435<br> -->
+                    <!-- <strong>Whatsapp:</strong> +56 9 4241 1406<br> -->
+                    <strong>Mail:</strong> cpezo@rodrigovielma</p>
+                    <!--<p><strong>Agenda y consultas:</strong> +569 683 191 45<br>
+                      <strong>Mail:</strong> copiapo@rodrigovielma.cl</p> -->
+                      <p><strong>Consulta Las Rastras</strong><br>
+                        30 Oriente 1330, oficina 1, Talca<br>
+                        <!-- <strong>Fono: </strong>(56) 71 243 8539<br>
+                        <strong>Whatsapp:</strong> +56 9 4269 2676<br> -->
+                        <strong>Mail:</strong> talca@rodrigovielma – mgonzalez@rodrigovielma.cl</p>
+                        <p><strong>Edificio Studio Sur</strong><br>
+                          Ohiggins 1186/ esq Ongolmo, oficina 202, Concepción.<br>
+                          <!-- <strong>Agenda y consulta</strong>: +569 9848 9643<br> -->
+                          <b>Correo:</b> cfernandez@rodrigovielma.cl</p>
+
+              </p>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+
+<div class="tab-pane fade" id="list-22" role="tabpanel" aria-labelledby="list-22-list">
+  <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+
+              <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; width: 250px; margin-top: 50px;" src="http://www.climed.cl/wp-content/uploads/2020/03/cirugia-svalenzuela-2.jpg" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+            <p class="card-text">
+              <h1>Dr. Sergio Valenzuela</h1>
+
+              
+              <div class="container">
+                  <ul>
+                    <li>
+                      <a href="http://www.climed.cl/cirugia-plastica/"></a>
+                      <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                    </li>
+                    <li>
+                      <a href="http://instagram.com/dr.sergio_valenzuela_u"></a>
+                      <span class="icon google"><i class="fa fa-instagram"></i></span>
+                    </li>
+
+                  </ul>
+                </div>
+              </center>
+          </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3332.403711775307!2d-70.51741938480296!3d-33.360524780799814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cb10d6f06057%3A0x11d7a017f4e74f7e!2sCl%C3%ADnica%20Mediterr%C3%A1nea!5e0!3m2!1ses!2scl!4v1630422046645!5m2!1ses!2scl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </p>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+<div class="tab-pane fade" id="list-23" role="tabpanel" aria-labelledby="list-23-list">
+  <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+
+              <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; width: 250px; margin-top: 50px;" src="https://static.wixstatic.com/media/311d59_72c8bbc005ee48e5878d04fa23cb1671~mv2.jpg/v1/fill/w_491,h_771,al_c,q_85,usm_0.66_1.00_0.01/DR%20GONZALO%20GOMEZ%20CIRUG%C3%8DA%20PLASTICA%20ESTETI.webp" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+            <p class="card-text">
+              <h1>Dr. Gonzalo Gomez</h1>
+
+              
+              <div class="container">
+                  <ul>
+                    <li>
+                      <a href="http://www.gonzalogomez.cl/"></a>
+                      <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                    </li>
+                    <li>
+                      <a href="http://instagram.com/drgonzalogomez"></a>
+                      <span class="icon google"><i class="fa fa-instagram"></i></span>
+                    </li>
+
+                  </ul>
+                </div>
+              </center>
+          </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53296.67645905273!2d-70.62018439278309!3d-33.39606117233125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c588a838c385%3A0xb5026872e1f05af6!2zQ2zDrW5pY2EgU2FudGEgTWFyw61h!5e0!3m2!1ses!2scl!4v1630422231063!5m2!1ses!2scl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </p>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+
+<div class="tab-pane fade" id="list-24" role="tabpanel" aria-labelledby="list-24-list">
+  <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+
+              <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; width: 250px; margin-top: 50px;" src="http://hectorvaldes.cl/hv/wp-content/uploads/2019/03/dr-valdes-2.jpg" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+            <p class="card-text">
+              <h1>Dr. Hector Valdes</h1>
+
+              
+              <div class="container">
+                  <ul>
+                    <li>
+                      <a href="https://hectorvaldes.cl/hv/"></a>
+                      <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                    </li>
+                    <li>
+                      <a href="http://instagram.com/drhectorvaldes"></a>
+                      <span class="icon google"><i class="fa fa-instagram"></i></span>
+                    </li>
+
+                  </ul>
+                </div>
+              </center>
+          </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.8712703359!2d-70.57602168420316!3d-33.400522502338795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662ced7fceb9d3b%3A0xb560402646d2d9a!2sAv.%20Pdte.%20Kennedy%205735%2C%20Piso%201%2C%20Las%20Condes%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1630438185062!5m2!1ses!2scl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </p>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+<div class="tab-pane fade" id="list-25" role="tabpanel" aria-labelledby="list-25-list">
+  <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+
+              <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; width: 250px; margin-top: 50px;" src="https://www.drprado.cl/wp-content/uploads/2017/10/dr-roberto-prado-sanhueza.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+            <p class="card-text">
+              <h1>Dr. Roberto Prado</h1>
+
+              
+              <div class="container">
+                  <ul>
+                    <li>
+                      <a href="https://www.drprado.cl/"></a>
+                      <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                    </li>
+                    <li>
+                      <a href="http://instagram.com/drrobertoprado"></a>
+                      <span class="icon google"><i class="fa fa-instagram"></i></span>
+                    </li>
+
+                  </ul>
+                </div>
+              </center>
+          </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1665.435591973087!2d-70.57492734172196!3d-33.400524755973194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662ced7fceb9d3b%3A0xdff4ff62f686f301!2sAv.%20Pdte.%20Kennedy%205735%2C%20Oficina%20703%2C%20Las%20Condes%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1630438421373!5m2!1ses!2scl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </p>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+<div class="tab-pane fade" id="list-26" role="tabpanel" aria-labelledby="list-26-list">
+  <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+
+              <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; width: 250px; margin-top: 50px;" src="https://www.antonioprevitera.cl/wp-content/uploads/2021/03/Sin-titulo-5-5-300x300.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+            <p class="card-text">
+              <h1>Dr. Anotnio Previtera</h1>
+
+              
+              <div class="container">
+                  <ul>
+                    <li>
+                      <a href="https://www.antonioprevitera.cl/"></a>
+                      <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                    </li>
+                    <li>
+                      <a href="http://instagram.com/previteraplasticsurgery"></a>
+                      <span class="icon google"><i class="fa fa-instagram"></i></span>
+                    </li>
+
+                  </ul>
+                </div>
+              </center>
+          </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.9569700398447!2d-70.57613788420329!3d-33.398286802224355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662ced62aefffff%3A0xcdbb04ee3cd09c0c!2sAv.%20Pdte.%20Kennedy%205770%2C%20Oficina%20717%2C%20Vitacura%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1630438598789!5m2!1ses!2scl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </p>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+
+<div class="tab-pane fade" id="list-27" role="tabpanel" aria-labelledby="list-27-list">
+  <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+
+              <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; width: 250px; margin-top: 50px;" src="https://d1fdloi71mui9q.cloudfront.net/kldqUd42RXyfopUKlZFb_9GbyfMiOKrc2810n" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+            <p class="card-text">
+              <h1>Dr. Cesar Gonzalez</h1>
+
+              
+              <div class="container">
+                  <ul>
+                    <li>
+                      <a href="https://linktr.ee/THerealmagicdoctor"></a>
+                      <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                    </li>
+                    <li>
+                      <a href="http://instagram.com/therealmagicdoctor"></a>
+                      <span class="icon google"><i class="fa fa-instagram"></i></span>
+                    </li>
+
+                  </ul>
+                </div>
+              </center>
+          </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.8427899474796!2d-70.59430068480131!3d-33.42734278078054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf03519958f9%3A0x11903474cf918aa3!2sDr.%20Cesar%20Gonzalez!5e0!3m2!1ses-419!2scl!4v1630438784677!5m2!1ses-419!2scl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </p>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+<div class="tab-pane fade" id="list-28" role="tabpanel" aria-labelledby="list-28-list">
+  <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+
+              <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; width: 250px; margin-top: 50px;" src="https://www.asofiduciarias.org.co/wp-content/uploads/2018/06/sin-foto.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+            <p class="card-text">
+              <h1>Dr. Claudio Vallejos</h1>
+
+              
+              <div class="container">
+                  <ul>
+                    <li>
+                      <a href="http://claudiovallejos.cl/"></a>
+                      <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                    </li>
+                    <!-- <li>
+                      <a href="http://instagram.com/therealmagicdoctor"></a>
+                      <span class="icon google"><i class="fa fa-instagram"></i></span>
+                    </li> -->
+
+                  </ul>
+                </div>
+              </center>
+          </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.101167722916!2d-72.07063608388533!3d-45.56840412370039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdf2c4b892681f5d%3A0x7414ac8aa05fce81!2sJos%C3%A9%20Miguel%20Carrera%20231%2C%20Coyhaique%2C%20Ays%C3%A9n!5e0!3m2!1ses!2scl!4v1630438981461!5m2!1ses!2scl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </p>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+<div class="tab-pane fade" id="list-29" role="tabpanel" aria-labelledby="list-29-list">
+  <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+
+              <center><div class="thumb-lg member-thumb mx-auto" ><img style="height: 250px; width: 250px; margin-top: 50px;" src="https://www.asofiduciarias.org.co/wp-content/uploads/2018/06/sin-foto.png" class="rounded-circle img-thumbnail" alt="profile-image"></div>
+            <p class="card-text">
+              <h1>Dr. Renato Ramirez</h1>
+
+              
+              <div class="container">
+                  <ul>
+                    <li>
+                      <a href="https://lipoaltadefinicionchile.cl/services/lipo4d/"></a>
+                      <span class="icon github"><i class="fa fa-window-maximize"></i></span>
+                    </li>
+                    <!-- <li>
+                      <a href="http://instagram.com/therealmagicdoctor"></a>
+                      <span class="icon google"><i class="fa fa-instagram"></i></span>
+                    </li> -->
+
+                  </ul>
+                </div>
+              </center>
+          </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p class="card-text"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3331.540169789168!2d-70.53485108420372!3d-33.38306900144473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c953570f0933%3A0xfc9e124ff022a823!2sAv.%20las%20Condes%2010465%2C%20Oficina%20304%2C%20Santiago%2C%20Las%20Condes%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1630439230781!5m2!1ses!2scl" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </p>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+        </div>
+</body>
+</html>
